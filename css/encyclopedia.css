@@ -1,0 +1,137 @@
+body {
+  /* 给整个页面添加淡灰色背景，与内容区分 */
+  background-color: #f5f5f5;
+}
+/* 网页内容整体样式 */
+.content {
+  /* 内容居中 */
+  margin: 0 auto;
+  /* 背景白色  */
+  background: #fff;
+  /* 内容宽带设置为1100px */
+  width: 1100px;
+  /* 设置最小高度为100页高 */
+  min-height: 100vh;
+  /* 给内容添加一个宽带为1px的边框 */
+  border: 1px solid #e5e5e5;
+  /* 内容添加内边距，防止字体与边界靠的太近 */
+  padding: 29px 29px 0;
+  box-sizing: border-box;
+}
+/* 段落样式 */
+.paragraph {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 15px;
+  /* 段落首行空两个字体 */
+  text-indent: 2em;
+  /* 字体行高设置为24px */
+  line-height: 24px;
+}
+/* 小标题样式 */
+h2 {
+  color: #333;
+  text-align: left;
+  font-size: 16px;
+}
+/* 第一个排版 开始 */
+.imgBox {
+  width: 90%;
+  padding: 20px 50px;
+  display: grid;
+  grid:
+  '. . . area area'
+  '. . . area area';
+}
+.item {
+  /* margin-right: 80px; */
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+}
+.imgBox .itemRight {
+  grid-area: area;
+}
+.itemRight img {
+  width: 70%;
+  height: 90%;
+}
+.item .imgTxt {
+  color: #333;
+  float: left;
+  line-height: 20px;
+}
+
+/* 第一个排版 结束 */
+/* 第二个排版 开始 */
+.imgBox1 {
+  width: 90%;
+  padding: 20px 50px;
+}
+.imgBox1 .left, .imgBox1 .right, .imgBox1 .bottom {
+  float: left;
+}
+.imgBox1 .left {
+  width: 50%;
+}
+.imgBox1 .left .item {
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+}
+.imgBox1 .right {
+  width: 45%;
+  height: 260px;
+}
+.imgBox1 .right img{
+  width: 80%;
+  height: 235px;
+}
+.imgBox1 .bottom {
+  width: 90%;
+
+}
+.imgBox1 .bottom .item{
+  float: left;
+  width: 25%;
+}
+/* 第二个排版 结束 */
+/* 第三个排版 开始*/
+.imgBox2 {
+  width: 90%;
+  padding: 20px 50px;
+}
+.imgBox2 .item {
+  float: left;
+  margin-right: 100px;
+}
+.imgBox2 .right {
+  width: 220px;
+}
+.imgBox2 .right img {
+  width: 100%;
+}
+/* 第三个排版 结束*/
+/* 第四个排版 开始 */
+.imgBox2 {
+  width: 90%;
+  padding: 20px 50px;
+}
+.imgBox2 .item {
+  float: left;
+  margin-right: 100px;
+}
+.imgBox2 .right {
+  width: 220px;
+}
+.imgBox2 .right img {
+  width: 100%;
+}
+/* 第四个排版 结束 */
